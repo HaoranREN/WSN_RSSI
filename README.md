@@ -8,13 +8,13 @@ The wireless sensor network is constituted by 5 Iris Mote nodes. There are 4 anc
 
 ### Run
 
-1. In the AnchorMote folder, use the command below to program four motes as the anchor motes. Clearly lable them as mote 2 to mote 5 by changing (mote#) to its lable.
+1. In the AnchorMote folder, use the command below to program four motes as the anchor motes. Clearly lable the mote number by changing mote#.
 
-	`make iris install,(mote#) mib520,/dev/ttyUSB0`
+	`make iris install,$(mote#) mib520,/dev/ttyUSB0`
 
 2. In the TargetMote folder, use the command below to program the target mote.
 
-	`make iris install,(mote#) mib520,/dev/ttyUSB0`
+	`make iris install,$(mote#) mib520,/dev/ttyUSB0`
 
 3. Connect the target mote to a computer, in main folder, run the flowing command to execute the project.
 
